@@ -1,0 +1,43 @@
+/* Section hero */
+.hero {
+  margin: 0 auto;
+  background-color: #c4c4c4;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  max-width: 1600px;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+    url(../images/heroimg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+.hero__title {
+  max-width: 650px;
+  text-align: center;
+  margin: auto;
+  font-size: 44px;
+  font-weight: 900;
+  line-height: 1.36;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+/* кнопка в hero */
+.hero__button {
+  display: block;
+  margin: auto;
+  margin-top: 30px;
+  padding: 10px 33px;
+  color: #ffffff;
+  background-color: var(--accent-color);
+  font-style: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  border: 0;
+  border-radius: 4px;
+  transition: background-color var(--transition), box-shadow var(--transition);
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+}

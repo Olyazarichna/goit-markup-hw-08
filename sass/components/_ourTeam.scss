@@ -1,0 +1,64 @@
+/* Our team */
+.team.section {
+  padding-top: 94px;
+  background-color: #f5f4fa;
+}
+.team {
+  display: flex;
+  margin-top: 50px;
+}
+.team__item {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.team__item:not(:first-child) {
+  margin-left: 30px;
+}
+.card-content__name,
+.card-content__subtitle {
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.17;
+}
+.card-content__name {
+  margin-top: 30px;
+}
+.card-content__subtitle {
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 16px;
+  color: #757575;
+  font-weight: 400;
+}
+.icon-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 30px;
+}
+.icon-list__item:not(:first-child) {
+  margin-left: 10px;
+}
+.icon-list__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color var(--transition);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+.icon-list__symbol {
+  fill: #afb1b8;
+  transition: fill var(--transition);
+}
+.icon-list__link:hover .icon-list__symbol,
+.icon-list__link:focus .icon-list__symbol {
+  fill: #ffffff;
+}

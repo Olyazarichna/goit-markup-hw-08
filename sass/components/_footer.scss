@@ -1,0 +1,42 @@
+/* Footer */
+
+.footer-wrap {
+  background-color: var(--primary-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  display: flex;
+  align-items: baseline;
+}
+.logo__footer {
+  color: #ffffff;
+}
+.location {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  margin-top: 20px;
+}
+.footer-contact {
+  margin-top: 9px;
+}
+.footer-contact__link {
+  color: rgba(255, 255, 255, 0.6);
+}
+.invitation {
+  margin-left: 70px;
+}
+.invitation__title {
+  @extend %text;
+}
+.link-footer {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.link-footer .icon-list__symbol {
+  fill: #ffffff;
+}
