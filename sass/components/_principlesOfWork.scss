@@ -7,10 +7,17 @@
   margin-top: -1px;
 }
 .benefits-list {
-  display: flex;
+  display: block;
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    width: calc(50% - 30px);
+  }
 }
 .benefits-list__item:not(:first-child) {
-  margin-left: 30px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 30px;
+  }
 }
 .benefits-list__icon {
   display: flex;
