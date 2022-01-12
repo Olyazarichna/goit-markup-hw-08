@@ -55,6 +55,14 @@ a {
 
 @media screen and (min-width: 768px) {
   .header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     border-bottom: 1px solid #ececec;
   }
 }
@@ -85,6 +93,19 @@ a {
   .container {
     width: 1200px;
     background-color: cornflowerblue;
+  }
+}
+
+@media screen and (min-width: 481px) {
+  .container-header {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: baseline;
+    -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 
@@ -263,6 +284,19 @@ a {
   }
 }
 
+@media screen and (min-width: 481px) {
+  .menu-contact {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .nav-contact {
   display: -webkit-box;
   display: -webkit-flex;
@@ -344,8 +378,8 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .nav-contact__contact:last-child {
-    margin-top: 10px;
+  .nav-contact__list:not(:last-child) {
+    margin-bottom: 10px;
   }
 }
 
