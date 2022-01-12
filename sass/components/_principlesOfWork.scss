@@ -9,9 +9,25 @@
 .benefits-list {
   display: block;
   width: 100%;
+
   @media screen and (min-width: 768px) {
+    // display: flex;
+
+    // flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  @media screen and (min-width: 1200px) {
     display: flex;
-    width: calc(50% - 30px);
+    flex-wrap: nowrap;
+  }
+}
+
+.benefits-list__item:not(:first-child) {
+  margin-top: 30px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
   }
 }
 .benefits-list__item:not(:first-child) {
@@ -33,6 +49,11 @@
   line-height: 1.14;
   text-transform: uppercase;
   padding-top: 30px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  @media screen and(min-width:768px ) {
+    text-align: left;
+  }
 }
 .benefits-list__text {
   margin-top: 10px;
@@ -40,4 +61,5 @@
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
+  letter-spacing: 0.03em;
 }
