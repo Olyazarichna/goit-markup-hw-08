@@ -32,8 +32,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 a {
@@ -654,7 +660,18 @@ a {
 }
 
 .section.contain {
+  padding-bottom: 0;
   padding-top: 0;
+}
+
+.container-work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .container-work {
+    display: block;
+  }
 }
 
 .heading {
@@ -711,16 +728,32 @@ a {
 
 /* Our team */
 .team.section {
-  padding-top: 94px;
   background-color: #f5f4fa;
 }
 
 .team {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 50px;
+  display: block;
+  margin: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .team {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .team {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 50px;
+  }
 }
 
 .team__item {
@@ -731,8 +764,10 @@ a {
           border-radius: 0px 0px 4px 4px;
 }
 
-.team__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 1200px) {
+  .team__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .card-content__name,
@@ -812,18 +847,43 @@ a {
 /* Постоянные клиенты */
 .client-title {
   line-height: 1.16;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .client-title {
+    margin-bottom: 50px;
+  }
 }
 
 .client-list {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 
-.client-list__item:not(:first-child) {
-  margin-left: 30px;
+@media screen and (min-width: 768px) {
+  .client-list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .client-list__item:not(:first-child) {
+    margin-left: 30px;
+  }
 }
 
 .client-list__link {
