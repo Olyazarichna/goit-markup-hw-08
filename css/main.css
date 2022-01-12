@@ -72,7 +72,6 @@ a {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  width: 480px;
 }
 
 @media screen and (min-width: 480px) {
@@ -495,13 +494,19 @@ a {
 
 @media (min-device-pixel-ratio: 2), (min-resolutiion: 192dpi), (min-resollution: 2dppx) {
   .hero {
-    background-image: url(../images/Headerimg@3x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/Headerimg@3x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/Headerimg@3x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/Headerimg@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/Headerimg@3x.jpg);
   }
 }
 
 @media (min-device-pixel-ratio: 3), (min-resolutiion: 288dpi), (min-resollution: 3dppx) {
   .hero {
-    background-image: url(../images/headerimg@3x.jpg);
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.5)), to(rgba(47, 48, 58, 0.3))), url(../images/headerimg@3x.jpg);
+    background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/headerimg@3x.jpg);
+    background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/headerimg@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)), url(../images/headerimg@3x.jpg);
   }
 }
 

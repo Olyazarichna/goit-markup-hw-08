@@ -11,10 +11,12 @@
   background-size: cover;
 
   @media (min-device-pixel-ratio: 2), (min-resolutiion: 192dpi), (min-resollution: 2dppx) {
-    background-image: url(../images/Headerimg@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+      url(../images/Headerimg@3x.jpg);
   }
   @media (min-device-pixel-ratio: 3), (min-resolutiion: 288dpi), (min-resollution: 3dppx) {
-    background-image: url(../images/headerimg@3x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+      url(../images/headerimg@3x.jpg);
   }
 }
 
