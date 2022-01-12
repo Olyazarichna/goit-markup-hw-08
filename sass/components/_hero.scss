@@ -9,7 +9,15 @@
     url(../images/heroimg.jpg);
   background-position: center;
   background-size: cover;
+
+  @media (min-device-pixel-ratio: 2), (min-resolutiion: 192dpi), (min-resollution: 2dppx) {
+    background-image: url(../images/Headerimg@3x.jpg);
+  }
+  @media (min-device-pixel-ratio: 3), (min-resolutiion: 288dpi), (min-resollution: 3dppx) {
+    background-image: url(../images/headerimg@3x.jpg);
+  }
 }
+
 .hero__title {
   text-align: center;
   margin: auto;
