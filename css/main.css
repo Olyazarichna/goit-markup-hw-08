@@ -984,6 +984,7 @@ body.modal-open {
 /* Footer */
 .footer-wrap {
   background-color: var(--primary-color);
+  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
