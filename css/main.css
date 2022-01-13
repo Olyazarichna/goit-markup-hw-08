@@ -710,8 +710,14 @@ body.modal-open {
 }
 
 /* Our team */
-.team.section {
+.team-section {
   background-color: #f5f4fa;
+}
+
+@media screen and (min-width: 1200px) {
+  .team-section {
+    margin-top: 94px;
+  }
 }
 
 .team {
@@ -930,6 +936,8 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .footer-container {
+    margin-left: 76px;
+    margin-right: 89px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1001,30 +1009,17 @@ body.modal-open {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.invitation {
-  margin-top: 60px;
+@media screen and (max-width: 767px) {
+  .invitation {
+    text-align: center;
+    margin-top: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .invitation {
     margin-top: 5px;
-    margin-right: 89px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .invitation {
     margin-left: 70px;
-  }
-}
-
-.invitation__title {
-  text-align: center;
-}
-
-@media screen and (min-width: 1200px) {
-  .invitation__title {
-    text-align: left;
   }
 }
 
@@ -1040,14 +1035,19 @@ body.modal-open {
 
 /* form */
 .footer-form {
-  text-align: center;
+  margin-top: 60px;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-form {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) {
   .footer-form {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 60px;
   }
 }
 
@@ -1090,6 +1090,12 @@ body.modal-open {
 .footer-form__input:hover, .footer-form__input:focus {
   outline: none;
   border: 1px solid var(--accent-color);
+}
+
+@media screen and (min-width: 768px) {
+  .footer-form__input {
+    width: 450px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
