@@ -769,7 +769,6 @@ body.modal-open {
 /* Our team */
 .team-section {
   background-color: #f5f4fa;
-  min-width: 480px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -949,7 +948,6 @@ body.modal-open {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   -webkit-border-radius: 4px;
@@ -984,7 +982,6 @@ body.modal-open {
 /* Footer */
 .footer-wrap {
   background-color: var(--primary-color);
-  min-width: 480px;
   padding-top: 60px;
   padding-bottom: 60px;
 }
