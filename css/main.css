@@ -879,6 +879,7 @@ body.modal-open {
 }
 
 .client-list__link {
+  margin: 0;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
