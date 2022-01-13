@@ -5,20 +5,27 @@
   padding-top: 200px;
   padding-bottom: 200px;
   max-width: 1600px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-    url(../images/heroimg.jpg);
+  // background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+  //   url(../images/heroimg.jpg);
   background-position: center;
-  // background-size: cover;
+  background-size: cover;
 
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+      url(../images/mobile/mobilehero@1x.jpeg);
+  }
   @media (min-device-pixel-ratio: 2), (min-resolutiion: 192dpi), (min-resollution: 2dppx) {
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-      url(../images/headerimg@2x.jpg);
+      url(../images/mobile/mobelehero@2x.img);
     // background-size: 480px auto;
   }
-  @media (min-device-pixel-ratio: 3), (min-resolutiion: 288dpi), (min-resollution: 3dppx) {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
-      url(../images/headerimg@3x.jpg);
-  }
+  // @media screen and (min-device-pixel-ratio: 3),
+  //   screen and (min-resolutiion: 288dpi),
+  //   screen and (min-resollution: 3dppx) {
+  //   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.5), rgba(47, 48, 58, 0.3)),
+  //     url(../images/headerimg@3x.jpg);
+  // }
 }
 
 .hero__title {
