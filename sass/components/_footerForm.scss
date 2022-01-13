@@ -1,8 +1,16 @@
 /* form */
 .footer-form {
-  display: flex;
-  align-items: flex-end;
-  margin-left: 93px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+    margin-left: 93px;
+  }
 }
 .footer-form__label {
   display: block;
@@ -10,7 +18,7 @@
   letter-spacing: 0.03em;
 }
 .footer-form__input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -24,6 +32,9 @@
   &:focus {
     outline: none;
     border: 1px solid var(--accent-color);
+  }
+  @media screen and(min-width:1200px) {
+    width: 358px;
   }
 }
 .footer-form__input::placeholder {
@@ -47,10 +58,14 @@
   border: 0;
   cursor: pointer;
   transition: background-color var(--transition), box-shadow var(--transition);
+  margin-top: 20px;
   &:hover,
   &:focus {
     background-color: #188ce8;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
+  @media screen and(min-width:1200px) {
+    margin-top: 0;
   }
 }
 .footer-form__icon {

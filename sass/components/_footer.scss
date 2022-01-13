@@ -6,12 +6,31 @@
   padding-bottom: 60px;
 }
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and(min-width:768px) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+  @media screen and(min-width:1200px) {
+    flex-wrap: nowrap;
+  }
 }
 .logo__footer {
   color: #ffffff;
 }
+.footer-adress .logo {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin: 0;
+  }
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
+}
+
 .location {
   color: #ffffff;
   font-size: 14px;
@@ -20,6 +39,10 @@
   text-decoration: none;
   font-style: normal;
   margin-top: 20px;
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
 }
 .footer-contact {
   margin-top: 9px;
@@ -28,10 +51,21 @@
   color: rgba(255, 255, 255, 0.6);
 }
 .invitation {
-  margin-left: 70px;
+  margin-top: 60px;
+  @media screen and(min-width:768px) {
+    margin-top: 5px;
+    margin-right: 89px;
+  }
+  @media screen and(min-width:1200px) {
+    margin-left: 70px;
+  }
 }
 .invitation__title {
   @extend %text;
+  text-align: center;
+  @media screen and(min-width:1200px) {
+    text-align: left;
+  }
 }
 .link-footer {
   background: rgba(255, 255, 255, 0.1);
