@@ -11,6 +11,11 @@
     grid-template-columns: repeat(3, 1fr);
   }
 }
+.list-flex__link {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
 
 .list-flex__item:not(:first-child) {
   @media screen and(max-width: 767px) {
@@ -31,6 +36,7 @@
 .overlay {
   position: relative;
   overflow: hidden;
+  flex-grow: 1;
 }
 .overlay__element {
   position: absolute;
