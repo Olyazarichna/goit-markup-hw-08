@@ -2,12 +2,13 @@
 
 .client-title {
   line-height: 1.16;
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
   @media screen and(min-width:1200px) {
     margin-bottom: 50px;
   }
 }
 .client-list {
+  margin-top: 30px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 30px;
@@ -16,6 +17,7 @@
     grid-template-columns: repeat(3, 1fr);
   }
   @media screen and (min-width: 1200px) {
+    margin-top: 50px;
     display: flex;
     gap: 0;
   }

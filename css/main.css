@@ -341,7 +341,7 @@ body.modal-open {
   -webkit-flex-flow: column-reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  margin-top: 302px;
+  margin-top: 180px;
 }
 
 @media screen and (min-width: 768px) {
@@ -681,7 +681,7 @@ body.modal-open {
   font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
-  padding-top: 30px;
+  margin-top: 30px;
   letter-spacing: 0.03em;
   text-align: center;
 }
@@ -798,10 +798,15 @@ body.modal-open {
           border-radius: 0px 0px 4px 4px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 767px) {
   .team__item:not(:first-child) {
-    margin-left: 30px;
+    margin-top: 30px;
   }
+}
+
+.card-content {
+  padding-top: 30px;
+  padding-bottom: 24px;
 }
 
 .card-content__name,
@@ -811,14 +816,9 @@ body.modal-open {
   line-height: 1.17;
 }
 
-.card-content__name {
-  margin-top: 30px;
-}
-
 .card-content__subtitle {
   font-weight: 500;
   margin-top: 10px;
-  margin-bottom: 16px;
   color: #757575;
   font-weight: 400;
 }
@@ -832,7 +832,9 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-bottom: 30px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .icon-list__item:not(:first-child) {
@@ -880,7 +882,6 @@ body.modal-open {
 /* Постоянные клиенты */
 .client-title {
   line-height: 1.16;
-  margin-bottom: 30px;
 }
 
 @media screen and (min-width: 1200px) {
@@ -890,6 +891,7 @@ body.modal-open {
 }
 
 .client-list {
+  margin-top: 30px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[2];
@@ -906,6 +908,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .client-list {
+    margin-top: 50px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1591,7 +1594,16 @@ body.modal-open {
 }
 
 .list-flex__link {
-  display: block;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
   text-decoration: none;
 }
 
@@ -1623,9 +1635,10 @@ body.modal-open {
   -o-transition: transform var(--transition);
   transition: transform var(--transition);
   transition: transform var(--transition), -webkit-transform var(--transition);
+  padding: 60px 24px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 480px) {
   .overlay__element {
     padding: 77px 24px;
   }
@@ -1650,7 +1663,7 @@ body.modal-open {
 }
 
 .overlay__paragraph {
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 400;
   line-height: 1.55;
   letter-spacing: 0.03em;
@@ -1664,6 +1677,10 @@ body.modal-open {
 }
 
 .list-flex__content {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: 0px;
