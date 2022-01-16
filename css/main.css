@@ -782,6 +782,7 @@ body.modal-open {
 }
 
 .section.contain {
+  padding-bottom: 0;
   padding-top: 0;
 }
 
@@ -1100,6 +1101,7 @@ body.modal-open {
 
 .footer-adress .logo {
   text-align: center;
+  display: block;
 }
 
 @media screen and (min-width: 768px) {
