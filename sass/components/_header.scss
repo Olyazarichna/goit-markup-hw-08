@@ -53,6 +53,7 @@
 // кнопка в хедері
 .logo__menu {
   position: absolute;
+  // position: fixed;
   top: 10px;
   right: 0;
   z-index: 4;
@@ -110,7 +111,10 @@
     // height: 100%;
 
     &.is-open {
-      display: block;
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       position: fixed;
       background-color: #ffffff;
       padding: 48px 40px;
@@ -121,6 +125,7 @@
 
   @media screen and (min-width: 768px) {
     display: flex;
+    align-items: center;
   }
 }
 
@@ -194,17 +199,17 @@
 .nav-contact {
   display: flex;
   flex-flow: column-reverse;
-  margin-top: 180px;
+  // margin-top: 180px;
 
   @media screen and (min-width: 768px) {
     flex-flow: column;
-    margin-top: 21px;
-    margin-bottom: 21px;
+    // margin-top: 21px;
+    // margin-bottom: 21px;
     margin-left: 80px;
   }
   @media screen and (min-width: 1200px) {
     flex-direction: row;
-    align-items: baseline;
+    align-items: center;
   }
 }
 .nav-contact__list {
@@ -243,7 +248,7 @@
 
   @media screen and (min-width: 1200px) {
     display: flex;
-    align-items: baseline;
+    align-items: center;
     font-size: 14px;
     line-height: 1.14px;
   }

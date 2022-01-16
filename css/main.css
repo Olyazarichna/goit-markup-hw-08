@@ -222,7 +222,19 @@ body.modal-open {
     width: 100%;
   }
   .menu-navigation.is-open {
-    display: block;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: fixed;
     background-color: #ffffff;
     padding: 48px 40px;
@@ -237,6 +249,10 @@ body.modal-open {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -350,7 +366,6 @@ body.modal-open {
   -webkit-flex-flow: column-reverse;
       -ms-flex-flow: column-reverse;
           flex-flow: column-reverse;
-  margin-top: 180px;
 }
 
 @media screen and (min-width: 768px) {
@@ -360,8 +375,6 @@ body.modal-open {
     -webkit-flex-flow: column;
         -ms-flex-flow: column;
             flex-flow: column;
-    margin-top: 21px;
-    margin-bottom: 21px;
     margin-left: 80px;
   }
 }
@@ -373,10 +386,10 @@ body.modal-open {
     -webkit-flex-direction: row;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: baseline;
-    -webkit-align-items: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -433,10 +446,10 @@ body.modal-open {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: baseline;
-    -webkit-align-items: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     font-size: 14px;
     line-height: 1.14px;
   }
