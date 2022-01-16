@@ -74,10 +74,6 @@ body.modal-open {
   text-transform: uppercase;
 }
 
-.header {
-  position: relative;
-}
-
 @media screen and (min-width: 768px) {
   .header {
     display: -webkit-box;
@@ -147,10 +143,17 @@ body.modal-open {
   }
 }
 
+@media screen and (max-width: 767px) {
+  .button-wraper {
+    position: relative;
+    width: 100%;
+  }
+}
+
 .logo__menu {
   position: absolute;
   top: 10px;
-  right: 15px;
+  right: 0;
   z-index: 4;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
@@ -169,7 +172,7 @@ body.modal-open {
 }
 
 .logo__menu:hover, .logo__menu:focus {
-  color: var(--accent-color);
+  fill: var(--accent-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -308,8 +311,14 @@ body.modal-open {
   background-color: #2196f3;
   -webkit-border-radius: 2px;
           border-radius: 2px;
-  bottom: -3px;
+  bottom: 30px;
   left: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .site-nav__link--current::after {
+    bottom: -3px;
+  }
 }
 
 @media screen and (min-width: 768px) {
