@@ -1,4 +1,7 @@
 .header {
+  position: sticky;
+  top: 0;
+
   @media screen and (min-width: 768px) {
     border-bottom: 1px solid #ececec;
   }
