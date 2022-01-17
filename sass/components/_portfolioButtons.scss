@@ -1,3 +1,9 @@
+.header.portfolio-header {
+  @media screen and (max-width: 767px) {
+    position: static;
+  }
+}
+
 .filtr {
   display: flex;
   justify-content: flex-start;

@@ -23,6 +23,7 @@
 }
 
 .container-header {
+  position: relative;
   @media screen and(min-width:768px) {
     display: flex;
   }
@@ -66,7 +67,7 @@
   width: 40px;
   height: 40px;
   top: 10px;
-  right: 15px;
+  right: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
