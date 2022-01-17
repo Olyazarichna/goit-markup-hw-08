@@ -74,15 +74,6 @@ body.modal-open {
   text-transform: uppercase;
 }
 
-@media screen and (max-width: 767px) {
-  .header {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .header {
     border-bottom: 1px solid #ececec;
@@ -123,11 +114,20 @@ body.modal-open {
   }
 }
 
-@media screen and (max-width: 767px) {
-  .button-wraper {
-    position: relative;
-    width: 100%;
-  }
+.button-wraper {
+  min-height: 60px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .logo {
@@ -140,7 +140,6 @@ body.modal-open {
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  margin: 16px 0;
 }
 
 .logo .logo__header--accent {
@@ -166,7 +165,7 @@ body.modal-open {
   width: 40px;
   height: 40px;
   top: 10px;
-  right: 0;
+  right: 15px;
   display: -webkit-inline-box;
   display: -webkit-inline-flex;
   display: -ms-inline-flexbox;
@@ -179,7 +178,7 @@ body.modal-open {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-left: 0;
+  margin: 0;
   padding: 0;
   border: none;
   background-color: transparent;
@@ -187,14 +186,14 @@ body.modal-open {
   z-index: 4;
 }
 
-.logo__menu:hover, .logo__menu:focus {
-  fill: var(--accent-color);
-}
-
 @media screen and (min-width: 768px) {
   .logo__menu {
     display: none;
   }
+}
+
+.logo__menu:hover, .logo__menu:focus {
+  fill: var(--accent-color);
 }
 
 .logo__menu .logo__icon-close {
@@ -215,7 +214,8 @@ body.modal-open {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
   }
   .menu-navigation.is-open {
     display: -webkit-box;
@@ -234,7 +234,6 @@ body.modal-open {
     position: fixed;
     background-color: #ffffff;
     padding: 48px 40px;
-    height: 100%;
     z-index: 3;
   }
 }
@@ -1476,6 +1475,11 @@ body.modal-open {
   -webkit-transition: border-color var(--transition);
   -o-transition: border-color var(--transition);
   transition: border-color var(--transition);
+}
+
+.form-field__textarea:hover, .form-field__textarea:focus {
+  outline: none;
+  border-color: var(--accent-color);
 }
 
 .form-field__textarea::-webkit-input-placeholder {
