@@ -1338,20 +1338,38 @@ body.modal-open {
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
+  position: relative;
+  margin-top: 93px;
+  margin-left: 15px;
+  margin-right: 15px;
   max-width: 450px;
   min-height: 609px;
-  -webkit-transform: translate(-50%, -50%) scale(1);
-      -ms-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
   background-color: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   -webkit-border-radius: 4px;
           border-radius: 4px;
   padding: 40px;
+}
+
+@media screen and (min-width: 480px) {
+  .modal {
+    margin-top: 93px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+        -ms-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
+    margin: 0;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1403,12 +1421,18 @@ body.modal-open {
 
 /* форма модального вікна */
 .form-text {
-  font-size: 20px;
+  font-size: 12px;
   font-weight: 700;
   line-height: 1.13;
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 2px;
+}
+
+@media screen and (min-width: 480px) {
+  .form-text {
+    font-size: 20px;
+  }
 }
 
 .form-field {
@@ -1538,12 +1562,18 @@ body.modal-open {
 .checkbox__label {
   position: relative;
   display: inline-block;
-  font-size: 14px;
+  font-size: 10px;
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
   padding-left: 20px;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__label {
+    font-size: 14px;
+  }
 }
 
 .is-hidden-icon {
@@ -1572,7 +1602,7 @@ body.modal-open {
 .form-field__button {
   display: block;
   padding: 10px 55px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
@@ -1594,6 +1624,12 @@ body.modal-open {
   background-color: #188ce8;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media screen and (min-width: 480px) {
+  .form-field__button {
+    font-size: 16px;
+  }
 }
 
 .filtr {
