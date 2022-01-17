@@ -78,12 +78,8 @@ body.modal-open {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-}
-
-@media screen and (min-width: 768px) {
-  .header {
-    border-bottom: 1px solid #ececec;
-  }
+  background-color: #ffffff;
+  border-bottom: 1px solid #ececec;
 }
 
 .container {
@@ -189,7 +185,7 @@ body.modal-open {
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 4;
+  z-index: 3;
 }
 
 @media screen and (min-width: 768px) {
@@ -240,7 +236,7 @@ body.modal-open {
     position: fixed;
     background-color: #ffffff;
     padding: 48px 40px;
-    z-index: 3;
+    z-index: 2;
   }
 }
 
