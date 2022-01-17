@@ -2,10 +2,7 @@
   position: sticky;
   top: 0;
   background-color: #ffffff;
-
-  // @media screen and (min-width: 768px) {
   border-bottom: 1px solid #ececec;
-  // }
 }
 .container {
   padding-left: 15px;
@@ -31,20 +28,14 @@
 }
 
 // кнопка в хедері
-// .button-wraper {
-//   @media screen and (max-width: 767px) {
-//     position: relative;
-//     width: 100%;
-//   }
-// }
-// змінила
+
 .button-wraper {
   min-height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-// змінила
+
 .logo {
   display: inline-block;
   font-family: $font-family-logo;
@@ -55,7 +46,6 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
-  // margin: 16px 0;
 
   .logo__header--accent {
     color: #000000;
@@ -94,11 +84,6 @@
     fill: var(--accent-color);
   }
 }
-// .icon-menu {
-//   position: absolute;
-//   top: 10px;
-//   right: 10px;
-// }
 
 .logo__menu .logo__icon-close {
   display: none;
@@ -136,11 +121,6 @@
     align-items: center;
   }
 }
-// .menu-navigation .logo__menu {
-//   position: absolute;
-//   top: 10px;
-//   right: 0;
-// }
 
 .site-nav__item {
   display: flex;
@@ -148,14 +128,12 @@
   flex-direction: column;
 
   @media screen and (min-width: 768px) {
-    // flex-wrap: nowrap;
     flex-direction: row;
   }
 }
 
 .site-nav__list {
   position: relative;
-  // display: block;
   display: inline-flex;
 }
 .site-nav__list:not(:first-child) {
@@ -237,7 +215,6 @@
     display: inline-flex;
   }
   @media screen and (min-width: 1200px) {
-    // margin-left: 30px;
     align-items: center;
   }
 }
