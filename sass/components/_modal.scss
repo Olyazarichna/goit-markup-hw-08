@@ -98,6 +98,7 @@
 .form-field__input:focus + .form-field__label {
   fill: var(--accent-color);
   @media screen and(max-width: 767px) {
+    color: var(--accent-color);
   }
 }
 // .form-field__label:hover .form-field__input,

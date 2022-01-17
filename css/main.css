@@ -1455,6 +1455,13 @@ body.modal-open {
   fill: var(--accent-color);
 }
 
+@media screen and (max-width: 767px) {
+  .form-field__input:hover + .form-field__label,
+  .form-field__input:focus + .form-field__label {
+    color: var(--accent-color);
+  }
+}
+
 .form-field__input {
   width: 100%;
   padding: 10px;
