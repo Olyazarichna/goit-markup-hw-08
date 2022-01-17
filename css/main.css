@@ -1357,7 +1357,7 @@ body.modal-open {
   .modal {
     width: 450px;
     position: absolute;
-    top: 50%;
+    top: 90%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
         -ms-transform: translate(-50%, -50%) scale(1);
@@ -1368,6 +1368,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .modal {
+    top: 50%;
     width: 528px;
     min-height: 581px;
   }
