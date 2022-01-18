@@ -33,12 +33,12 @@
 // кнопка в хедері
 
 .button-wraper {
-  // position: relative;
+  position: relative;
 
-  min-height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // min-height: 60px;
+  // display: flex;
+  // align-items: center;
+  // justify-content: space-between;
 }
 
 .logo {
@@ -51,6 +51,7 @@
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: none;
+  margin: 16px 0;
 
   .logo__header--accent {
     color: #000000;
@@ -64,14 +65,18 @@
     font-weight: 700;
   }
 }
-
-.logo__menu {
-  // position: absolute;
+.logo__menu.is-open {
   position: fixed;
+  top: 10px;
+  right: 15px;
+}
+.logo__menu {
+  position: absolute;
+  // position: fixed;
   width: 40px;
   height: 40px;
   top: 10px;
-  right: 0;
+  right: 15px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
