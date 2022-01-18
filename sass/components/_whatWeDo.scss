@@ -1,7 +1,10 @@
 .section.contain {
-  padding-bottom: 0;
   padding-top: 0;
+  @media screen and(min-width:1200px) {
+    padding-bottom: 94px;
+  }
 }
+
 .container-work {
   display: none;
   @media screen and(min-width:1200px) {

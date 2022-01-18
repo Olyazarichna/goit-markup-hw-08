@@ -777,8 +777,13 @@ body.modal-open {
 }
 
 .section.contain {
-  padding-bottom: 0;
   padding-top: 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .section.contain {
+    padding-bottom: 94px;
+  }
 }
 
 .container-work {
