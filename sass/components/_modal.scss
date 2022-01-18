@@ -32,14 +32,14 @@
   @media screen and (min-width: 480px) {
     width: 450px;
     position: absolute;
-    top: 90%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
     margin: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    top: 50%;
+    // top: 50%;
     width: 528px;
     min-height: 581px;
   }
